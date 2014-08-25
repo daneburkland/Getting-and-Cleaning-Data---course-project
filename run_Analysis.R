@@ -22,6 +22,7 @@ test <- cbind(test,testLabel, testX)
 df <- rbind(train, test)
 
 #subsets only the subject, activity, mean(x3) and standard deviation(x3) columns
+#note that it was my interpretation of instructions to only include the total body mean and total body std columns
 df <- df[,1:8]
 
 #reads activity labels, sets 'activity' column as a factor variable, re-labelling with descriptive labels
